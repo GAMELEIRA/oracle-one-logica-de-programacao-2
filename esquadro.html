@@ -1,0 +1,52 @@
+<!--
+    AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+    DATA: 07/09/2020
+    HORA: 02:44
+    FINALIDADE DA PAGINA: MONTAR UM ESQUADRO
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquadro</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+</body>
+
+</html>
+<script>
+
+    let tela = document.querySelector("canvas");
+
+    let pencil = tela.getContext("2d");
+
+    pencil.fillStyle = "black";
+
+    pencil.beginPath();
+
+    pencil.moveTo(50, 50);
+
+    pencil.lineTo(50, 400);
+
+    pencil.lineTo(400, 400);
+
+    pencil.fill();
+
+    pencil.fillStyle = "white";
+
+    pencil.beginPath();
+
+    pencil.moveTo(100, 175);
+
+    pencil.lineTo(100, 350);
+
+    pencil.lineTo(275, 350);
+
+    pencil.fill();
+
+</script>
