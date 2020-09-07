@@ -1,0 +1,41 @@
+<!--
+    AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+    DATA: 07/09/2020
+    HORA: 01:04
+    FINALIDADE DA PAGINA: MOSTRAR A BANDEIRA FRANCESA
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandeira Francesa</title>
+</head>
+
+<body>
+    <canvas width="600" height="400"></canvas>
+</body>
+
+</html>
+<script>
+
+    var tela = document.querySelector("canvas");
+
+    var pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "white"
+
+    pincel.fillRect(0, 0, 600, 400);
+
+    pincel.fillStyle = "blue"
+
+    pincel.fillRect(0, 0, 200, 400);
+
+    pincel.fillStyle = "red"
+
+    pincel.fillRect(400, 0, 600, 400);
+
+
+</script>
