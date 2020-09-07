@@ -1,0 +1,44 @@
+<!--
+    AUTOR: GABRIEL GAMELEIRA DOS SANTOS
+    DATA: 07/09/2020
+    HORA: 01:51
+    FINALIDADE DA PAGINA: MONTAR A CARA DO CREEPER
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creeper</title>
+</head>
+
+<body>
+    <canvas width="350" height="300"></canvas>
+</body>
+
+</html>
+<script>
+
+    let tela = document.querySelector("canvas");
+
+    let pincel = tela.getContext("2d");
+
+    pincel.fillStyle = "green";
+
+    pincel.fillRect(0, 0, 350, 300);
+
+    pincel.fillStyle = "black";
+
+    pincel.fillRect(210, 190, 40, 110); //BOCA DIREITA
+
+    pincel.fillRect(100, 190, 40, 110); //BOCA ESQUERDA
+
+    pincel.fillRect(50, 60, 90, 90); //OLHA ESQUERDO
+
+    pincel.fillRect(210, 60, 90, 90); //OLHO DIREITO
+
+    pincel.fillRect(140, 150, 70, 100); //NARIZ
+
+</script>
